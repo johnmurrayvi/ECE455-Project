@@ -1,15 +1,15 @@
 package com.jjmvi.smartgarden;
 
 import java.util.Locale;
-import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.actionbarsherlock.app.SherlockFragment;
 
-public class ItemFragment extends Fragment {
+public class ItemFragment extends SherlockFragment {
 	public static final String ARG_ITEM_NUMBER = "planet_number";
 
 	public ItemFragment() {

@@ -1,6 +1,5 @@
 package com.jjmvi.smartgarden;
 
-import android.app.Fragment;
 import android.os.Bundle;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -11,8 +10,9 @@ import android.widget.FrameLayout;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.TextView;
 
+import com.actionbarsherlock.app.SherlockFragment;
 
-public class SuperAwesomeCardFragment extends Fragment
+public class SuperAwesomeCardFragment extends SherlockFragment
 {
 	private static final String ARG_POSITION = "position";
 

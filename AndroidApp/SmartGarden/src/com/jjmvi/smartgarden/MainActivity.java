@@ -2,7 +2,6 @@ package com.jjmvi.smartgarden;
 
 import android.os.Bundle;
 import android.app.Activity;
-import android.app.Fragment;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.content.res.Configuration;
@@ -14,7 +13,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class MainActivity extends Activity
+import com.actionbarsherlock.app.SherlockFragment;
+import com.actionbarsherlock.app.SherlockFragmentActivity;
+
+public class MainActivity extends SherlockFragmentActivity
 {
 	DrawerLayout mDrawerLayout;
 	ListView mDrawerList;
@@ -37,7 +39,7 @@ public class MainActivity extends Activity
 		mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
 		// set a custom shadow that overlays the main content when the drawer opens
-//		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
+		mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
 
 		// set up the drawer's list view with items and click listener
 		mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mNavListTitles));
@@ -52,13 +54,13 @@ public class MainActivity extends Activity
 		{
 			public void onDrawerOpened(View drawerview)
 			{
-				getActionBar().setTitle(mDrawerTitle);
+				getSupportActionBar().setTitle(mDrawerTitle);
 				invalidateOptionsMenu();
 			}
 
 			public void onDrawerClosed(View view)
 			{
-				getActionBar().setTitle(mTitle);
+				getSupportActionBar().setTitle(mTitle);
 				invalidateOptionsMenu();
 			}
 		};
@@ -68,23 +70,31 @@ public class MainActivity extends Activity
 		
 	}
 
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu)
-	{
-		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.main, menu);
-		return true;
-	}
+//	@Override
+//	public boolean onCreateOptionsMenu(Menu menu)
+//	{
+//		// Inflate the menu; this adds items to the action bar if it is present.
+//		getMenuInflater().inflate(R.menu.main, menu);
+//		return true;
+//	}
 
 	@Override
-  public boolean onOptionsItemSelected(MenuItem item)
+	public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu)
+	{
+		return super.onCreateOptionsMenu(menu);
+	}
+
+
+	@Override
+  public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item)
   {
-	switch (item.getItemId()) {
+	int itemId = item.getItemId();
+	switch (itemId) {
 	  case android.R.id.home: 
         if (mDrawerLayout.isDrawerOpen(mDrawerList)) {
           mDrawerLayout.closeDrawer(mDrawerList);
         } else {
-          mDrawerLayout.openDrawer(mDrawerLayout);
+          mDrawerLayout.openDrawer(mDrawerList);
         }
         break;
       }
@@ -121,7 +131,7 @@ public class MainActivity extends Activity
   {
     switch (index) {
       case 0:
-        getFragmentManager()
+        getSupportFragmentManager()
           .beginTransaction()
           .add(R.id.content, 
               PageSlidingTabStripFragment.newInstance(),
@@ -129,16 +139,16 @@ public class MainActivity extends Activity
         break;
       default:
         // Get a new fragment for the index
-        Fragment fragment = new ItemFragment();
+        SherlockFragment fragment = new ItemFragment();
         Bundle args = new Bundle();
         args.putInt(ItemFragment.ARG_ITEM_NUMBER, index);
         fragment.setArguments(args);
         // Call the fragment
-        getFragmentManager().beginTransaction().add(R.id.content, fragment).commit();
+        getSupportFragmentManager().beginTransaction().add(R.id.content, fragment).commit();
         break;
     }
     // Close the drawer when we switch to a new page
-    mDrawerLayout.closeDrawer(mDrawerLayout);
+    mDrawerLayout.closeDrawer(mDrawerList);
   }
 
 }

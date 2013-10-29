@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.actionbarsherlock.app.SherlockFragment;
 import com.astuetz.viewpager.extensions.PagerSlidingTabStrip;
 
 public class PageSlidingTabStripFragment extends Fragment
@@ -66,17 +67,10 @@ public class PageSlidingTabStripFragment extends Fragment
 			return TITLES.length;
 		}
 
-//		@Override
-//		public SherlockFragment getItem(int position)
-//		{
-//			return SuperAwesomeCardFragment.newInstance(position);
-//		}
-
     @Override
-    public Fragment getItem(int index)
+    public SherlockFragment getItem(int index)
     {
       return SuperAwesomeCardFragment.newInstance(index);
     }
 	}
-
 }
