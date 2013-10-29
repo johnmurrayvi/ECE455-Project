@@ -70,20 +70,11 @@ public class MainActivity extends SherlockFragmentActivity
 		
 	}
 
-//	@Override
-//	public boolean onCreateOptionsMenu(Menu menu)
-//	{
-//		// Inflate the menu; this adds items to the action bar if it is present.
-//		getMenuInflater().inflate(R.menu.main, menu);
-//		return true;
-//	}
-
 	@Override
 	public boolean onCreateOptionsMenu(com.actionbarsherlock.view.Menu menu)
 	{
 		return super.onCreateOptionsMenu(menu);
 	}
-
 
 	@Override
   public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item)
@@ -131,11 +122,8 @@ public class MainActivity extends SherlockFragmentActivity
   {
     switch (index) {
       case 0:
-        getSupportFragmentManager()
-          .beginTransaction()
-          .add(R.id.content, 
-              PageSlidingTabStripFragment.newInstance(),
-              PageSlidingTabStripFragment.TAG).commit();
+        getSupportFragmentManager().beginTransaction()
+          .add(R.id.content, PageSlidingTabStripFragment.newInstance(), PageSlidingTabStripFragment.TAG).commit();
         break;
       default:
         // Get a new fragment for the index
@@ -143,7 +131,6 @@ public class MainActivity extends SherlockFragmentActivity
         Bundle args = new Bundle();
         args.putInt(ItemFragment.ARG_ITEM_NUMBER, index);
         fragment.setArguments(args);
-        // Call the fragment
         getSupportFragmentManager().beginTransaction().add(R.id.content, fragment).commit();
         break;
     }

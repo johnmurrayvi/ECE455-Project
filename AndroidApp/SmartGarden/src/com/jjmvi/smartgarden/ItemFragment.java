@@ -9,15 +9,18 @@ import android.widget.ImageView;
 
 import com.actionbarsherlock.app.SherlockFragment;
 
-public class ItemFragment extends SherlockFragment {
-	public static final String ARG_ITEM_NUMBER = "planet_number";
+public class ItemFragment extends SherlockFragment
+{
+	public static final String ARG_ITEM_NUMBER = "item_number";
 
-	public ItemFragment() {
+	public ItemFragment()
+	{
 		// Empty constructor required for fragment subclasses
 	}
 
 	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+	{
 	  View rootView = inflater.inflate(R.layout.fragment_item, container, false);
 		int i = getArguments().getInt(ARG_ITEM_NUMBER);
 		String planet = getResources().getStringArray(R.array.planets_array)[i];
