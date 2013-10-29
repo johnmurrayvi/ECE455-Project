@@ -33,8 +33,8 @@ public class MainActivity extends SherlockFragmentActivity
 		setContentView(R.layout.activity_main);
 		
 		mTitle = mDrawerTitle = getTitle();
-//		mNavListTitles = getResources().getStringArray(R.array.nav_list_titles_array);
-		mNavListTitles = getResources().getStringArray(R.array.planets_array);
+		mNavListTitles = getResources().getStringArray(R.array.nav_list_titles_array);
+//		mNavListTitles = getResources().getStringArray(R.array.planets_array);
 		mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 		mDrawerList = (ListView) findViewById(R.id.left_drawer);
 
@@ -79,9 +79,9 @@ public class MainActivity extends SherlockFragmentActivity
 	@Override
   public boolean onOptionsItemSelected(com.actionbarsherlock.view.MenuItem item)
   {
-	int itemId = item.getItemId();
-	switch (itemId) {
-	  case android.R.id.home: 
+  	int itemId = item.getItemId();
+  	switch (itemId) {
+  	  case android.R.id.home: 
         if (mDrawerLayout.isDrawerOpen(mDrawerList)) {
           mDrawerLayout.closeDrawer(mDrawerList);
         } else {

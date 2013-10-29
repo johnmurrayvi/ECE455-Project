@@ -23,11 +23,11 @@ public class ItemFragment extends SherlockFragment
 	{
 	  View rootView = inflater.inflate(R.layout.fragment_item, container, false);
 		int i = getArguments().getInt(ARG_ITEM_NUMBER);
-		String planet = getResources().getStringArray(R.array.planets_array)[i];
+		String item = getResources().getStringArray(R.array.nav_list_titles_array)[i];
 
-		int imageId = getResources().getIdentifier(planet.toLowerCase(Locale.getDefault()), "drawable", getActivity().getPackageName());
+		int imageId = getResources().getIdentifier(item.toLowerCase(Locale.getDefault()), "drawable", getActivity().getPackageName());
     ((ImageView) rootView.findViewById(R.id.image)).setImageResource(imageId);
-		getActivity().setTitle(planet);
+		getActivity().setTitle(item);
 		return rootView;
 	}
 }

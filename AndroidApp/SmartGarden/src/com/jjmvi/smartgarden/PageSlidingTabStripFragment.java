@@ -53,7 +53,7 @@ public class PageSlidingTabStripFragment extends Fragment
 			super(fm);
 		}
 
-		private final String[] TITLES = { "Categories", "Home", "Top Paid", "Top Free" };
+		private final String[] TITLES = { "Temperature", "Humidity", "Light", "Forecast" };
 
 		@Override
 		public CharSequence getPageTitle(int position)
