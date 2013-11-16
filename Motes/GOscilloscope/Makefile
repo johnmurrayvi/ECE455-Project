@@ -1,0 +1,3 @@
+COMPONENT=GOscilloscopeAppC
+
+include $(MAKERULES)
