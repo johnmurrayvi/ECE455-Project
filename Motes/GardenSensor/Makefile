@@ -1,3 +1,4 @@
 COMPONENT=GardenSensorAppC
+CFLAGS += -DTOSH_DATA_LENGTH=64
 
 include $(MAKERULES)
