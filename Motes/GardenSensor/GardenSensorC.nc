@@ -9,6 +9,7 @@ module GardenSensorC @safe()
     interface AMSend;
     interface Receive;
     interface Timer<TMilli>;
+    interface Timer<TMilli> as oneShot;
     interface Read<uint16_t> as lightSensor;
     interface Read<uint16_t> as tempSensor;
     interface Read<uint16_t> as humdSensor;
@@ -29,9 +30,29 @@ implementation
   uint8_t Hreading; /* 0 to NREADINGS */
 
   // Use LEDs to report various status issues.
-  void report_problem() { call Leds.led0Toggle(); }
-  void report_sent() { call Leds.led1Toggle(); }
-  void report_received() { call Leds.led2Toggle(); }
+  void report_problem()
+  { 
+    call Leds.led0Toggle();
+    call oneShot.startOneShot(1000);
+  }
+  
+  void report_sent()
+  {
+    call Leds.led1Toggle();
+    call oneShot.startOneShot(1000);
+  }
+  
+  void report_received()
+  {
+    call Leds.led2Toggle();
+    call oneShot.startOneShot(1000);
+  }
+
+  // Turn off leds after 1 second to save battery
+  event void oneShot.fired()
+  {
+    call Leds.set(0);
+  }
 
   event void Boot.booted()
   {
