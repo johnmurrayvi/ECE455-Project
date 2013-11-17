@@ -1,7 +1,7 @@
 #include "Timer.h"
-#include "GOscilloscope.h"
+#include "GardenData.h"
 
-module GOscilloscopeC @safe()
+module GardenSensorC @safe()
 {
   uses {
     interface Boot;
@@ -9,7 +9,9 @@ module GOscilloscopeC @safe()
     interface AMSend;
     interface Receive;
     interface Timer<TMilli>;
-    interface Read<uint16_t>;
+    interface Read<uint16_t> as lightSensor;
+    interface Read<uint16_t> as tempSensor;
+    interface Read<uint16_t> as humdSensor;
     interface Leds;
   }
 }
@@ -20,7 +22,7 @@ implementation
   bool sendBusy;
 
   /* Current local state - interval, version and accumulated readings */
-  oscilloscope_t local;
+  gdata_t local;
 
   uint8_t reading; /* 0 to NREADINGS */
 
@@ -36,7 +38,8 @@ implementation
   void report_sent() { call Leds.led1Toggle(); }
   void report_received() { call Leds.led2Toggle(); }
 
-  event void Boot.booted() {
+  event void Boot.booted()
+  {
     local.interval = DEFAULT_INTERVAL;
     local.id = TOS_NODE_ID;
     if (call RadioControl.start() != SUCCESS)
@@ -60,23 +63,9 @@ implementation
 
   event message_t* Receive.receive(message_t* msg, void* payload, uint8_t len)
   {
-    oscilloscope_t *omsg = payload;
+    gdata_t *rmsg = payload;
 
     report_received();
-
-    /* If we receive a newer version, update our interval. 
-       If we hear from a future count, jump ahead but suppress our own change
-    */
-    if (omsg->version > local.version) {
-      local.version = omsg->version;
-      local.interval = omsg->interval;
-      startTimer();
-    }
-
-    if (omsg->count > local.count) {
-      local.count = omsg->count;
-      suppressCountChange = TRUE;
-    }
 
     return msg;
   }
@@ -99,14 +88,15 @@ implementation
         report_problem();
 
       reading = 0;
-      /* Part 2 of cheap "time sync": increment our count if we didn't
-         jump ahead. */
-      if (!suppressCountChange) 
-        local.count++;
-      suppressCountChange = FALSE;
     }
 
-    if (call Read.read() != SUCCESS)
+    if (call lightSensor.read() != SUCCESS)
+      report_problem();
+
+    if (call tempSensor.read() != SUCCESS)
+      report_problem();
+
+    if (call humdSensor.read() != SUCCESS)
       report_problem();
   }
 
@@ -121,14 +111,36 @@ implementation
     sendBusy = FALSE;
   }
 
-  // Read of data done
-  event void Read.readDone(error_t result, uint16_t data)
+  // Read of light sensor done
+  event void lightSensor.readDone(error_t result, uint16_t data)
   {
     if (result != SUCCESS) {
       data = 0xffff;
       report_problem();
     }
     if (reading < NREADINGS) 
-      local.readings[reading++] = data;
+      local.lightData[reading++] = data;
+  }
+
+  // Read of temperature sensor done
+  event void tempSensor.readDone(error_t result, uint16_t data)
+  {
+    if (result != SUCCESS) {
+      data = 0xffff;
+      report_problem();
+    }
+    if (reading < NREADINGS) 
+      local.tempData[reading++] = data;
+  }
+
+  // Read of humidity sensor done
+  event void humdSensor.readDone(error_t result, uint16_t data)
+  {
+    if (result != SUCCESS) {
+      data = 0xffff;
+      report_problem();
+    }
+    if (reading < NREADINGS) 
+      local.humdData[reading++] = data;
   }
 }

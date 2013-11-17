@@ -1,3 +1,3 @@
-COMPONENT=GOscilloscopeAppC
+COMPONENT=GardenSensorAppC
 
 include $(MAKERULES)
