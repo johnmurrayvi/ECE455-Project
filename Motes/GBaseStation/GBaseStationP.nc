@@ -145,7 +145,8 @@ implementation
   }
 
   uint8_t tmpLen;
-  
+
+  // UART send over serial
   task void uartSendTask()
   {
     uint8_t len;
@@ -180,7 +181,7 @@ implementation
     }
   }
 
-  // UART send over serial
+  // UART send over serial done
   event void UartSend.sendDone[am_id_t id] (message_t* msg, error_t error)
   {
     if (error != SUCCESS) {
@@ -231,7 +232,7 @@ implementation
     return ret;
   }
 
-  // Task to send over radio
+  // Radio send
   task void radioSendTask()
   {
     uint8_t len;
