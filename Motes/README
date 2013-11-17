@@ -1,4 +1,5 @@
 This assumes ALL devices are TelosB motes.
+The sampling period is 6 minutes (i.e. 10 samples an hour).
 
 --- Compilation and Install ---
 
@@ -66,3 +67,5 @@ The data arrays are in this order: Light (PAR), Temperature, Humidity.
     00 1B 00 1B 00 19 00 19 00 19 00 1C 00 1A 00 1A 00 1B 00 1A     Light Sensor Data
     1A 00 1A 02 1A 05 1A 06 1A 06 1A 05 1A 06 1A 06 1A 07 1A 06     Temperature Sensor Data
     05 66 05 61 05 5C 05 58 05 52 05 4C 05 48 05 44 05 40 05 3E     Humidity Sensor Data
+
+Again, the sampling interval is 6 minutes (i.e. 10 samples an hour).
