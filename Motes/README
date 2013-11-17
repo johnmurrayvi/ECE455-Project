@@ -1,0 +1,68 @@
+This assumes ALL devices are TelosB motes.
+
+--- Compilation and Install ---
+
+At least 1 mote needs to be a "GardenSensor".
+To install the program to the desire mote, with n being a *unique* ID from 1-255 run:
+    make telosb install,<n>
+
+  ex:
+    make telosb install,2
+    ** unplug mote and plug in second one **
+    make telosb install,3
+
+
+Only 1 mote should be the "GBaseStation".
+It should remain connected to the usb even after installing the program.
+Generally, I would set the base station ID to 1, but it doesn't matter as long as they're all unique.
+    make telosb install,<n>
+
+  ex:
+    make telosb install,1
+
+
+--- Getting Data from the Base Station Mote ---
+
+Once the sensor and base station motes are programmed, the packets sent from the sensor motes are received
+by the base station and sent to the host via a serial connection.
+
+To see the raw data, first determine the device location of base station.
+This can be found using the "motelist" command. An example would be "/dev/ttyUSB0".
+
+Then, the following command can be used to listen to incoming packets:
+    java net.tinyos.tools.Listen -comm serial@<device location>:<device>
+
+  ex:
+    java net.tinyos.tools.Listen -comm serial@/dev/ttyUSB0:telosb
+
+
+--- Interpretting the Packet Data ---
+
+The packet data observed is in a specific format.
+
+The first 8 bytes are the header. Typically, they'll look something like this:
+    00 FF FF 00 02 3E 22 99 
+    Note: The 5th byte is the ID of the source mote and the 8th byte is the message ID (0x99 in this case).
+
+The bytes after the header are the payload. It is currently 64 bytes and contains all of the sensors data.
+
+The first 2 bytes (9th and 10th of the packet) of the payload are fixed (to aid in visual inspection). 
+These bytes will be "FF FF".
+
+The next 2 bytes (11th and 12th of the packet) of the payload are the number of samples. 
+This is set to 10 currently, thus it should be "00 0A". 
+
+Following this value is three arrays, where each value is 2 bytes and lengths are the number of samples.
+For 10 samples, each array will be 2 * 10 = 20 bytes.
+The data arrays are in this order: Light (PAR), Temperature, Humidity.
+
+  ex: (of payload, packet header is not included)
+    FF FF 00 0A 00 1B 00 1B 00 19 00 19 00 19 00 1C 00 1A 00 1A 00 1B 00 1A 1A 00 1A 02 1A 05 1A 06 
+    1A 06 1A 05 1A 06 1A 06 1A 07 1A 06 05 66 05 61 05 5C 05 58 05 52 05 4C 05 48 05 44 05 40 05 3E
+
+    This can be broken down into:
+    FF FF                                                           Fixed Bytes
+    00 0A                                                           Number of Samples
+    00 1B 00 1B 00 19 00 19 00 19 00 1C 00 1A 00 1A 00 1B 00 1A     Light Sensor Data
+    1A 00 1A 02 1A 05 1A 06 1A 06 1A 05 1A 06 1A 06 1A 07 1A 06     Temperature Sensor Data
+    05 66 05 61 05 5C 05 58 05 52 05 4C 05 48 05 44 05 40 05 3E     Humidity Sensor Data
