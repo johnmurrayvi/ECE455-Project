@@ -56,7 +56,7 @@ implementation
 
   event void Boot.booted()
   {
-    local.header = 0xFF;
+    local.header = 0xFFFF;
     local.numsamp = NREADINGS;
     if (call RadioControl.start() != SUCCESS)
       report_problem();

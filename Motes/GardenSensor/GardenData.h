@@ -13,7 +13,7 @@ enum {
 };
 
 typedef nx_struct gdata {
-  nx_uint8_t header; /* to visually read serial packet */
+  nx_uint16_t header; /* to visually read serial packet */
   nx_uint16_t numsamp; /* number of readings. */
   nx_uint16_t lightData[NREADINGS];
   nx_uint16_t tempData[NREADINGS];
