@@ -13,10 +13,8 @@ enum {
 };
 
 typedef nx_struct gdata {
-  nx_uint16_t version; /* Version of the interval. */
-  nx_uint16_t interval; /* Samping period. */
-  nx_uint16_t id; /* Mote id of sending mote. */
-  nx_uint16_t count; /* The readings are samples count * NREADINGS onwards */
+  nx_uint8_t header; /* to visually read serial packet */
+  nx_uint16_t numsamp; /* number of readings. */
   nx_uint16_t lightData[NREADINGS];
   nx_uint16_t tempData[NREADINGS];
   nx_uint16_t humdData[NREADINGS];

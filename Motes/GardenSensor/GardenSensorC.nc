@@ -21,17 +21,12 @@ implementation
   message_t sendBuf;
   bool sendBusy;
 
-  /* Current local state - interval, version and accumulated readings */
+  /* Current local state - interval and accumulated readings */
   gdata_t local;
 
-  uint8_t reading; /* 0 to NREADINGS */
-
-  /* When we head an Oscilloscope message, we check it's sample count. If
-     it's ahead of ours, we "jump" forwards (set our count to the received
-     count). However, we must then suppress our next count increment. This
-     is a very simple form of "time" synchronization (for an abstract
-     notion of time). */
-  bool suppressCountChange;
+  uint8_t Lreading; /* 0 to NREADINGS */
+  uint8_t Treading; /* 0 to NREADINGS */
+  uint8_t Hreading; /* 0 to NREADINGS */
 
   // Use LEDs to report various status issues.
   void report_problem() { call Leds.led0Toggle(); }
@@ -40,16 +35,18 @@ implementation
 
   event void Boot.booted()
   {
-    local.interval = DEFAULT_INTERVAL;
-    local.id = TOS_NODE_ID;
+    local.header = 0xFF;
+    local.numsamp = NREADINGS;
     if (call RadioControl.start() != SUCCESS)
       report_problem();
   }
 
   void startTimer()
   {
-    call Timer.startPeriodic(local.interval);
-    reading = 0;
+    call Timer.startPeriodic(DEFAULT_INTERVAL);
+    Lreading = 0;
+    Treading = 0;
+    Hreading = 0;
   }
 
   event void RadioControl.startDone(error_t error)
@@ -76,7 +73,7 @@ implementation
   */
   event void Timer.fired()
   {
-    if (reading == NREADINGS) {
+    if (Lreading == NREADINGS && Treading == NREADINGS && Hreading == NREADINGS) {
       if (!sendBusy && sizeof local <= call AMSend.maxPayloadLength()) {
         // Don't need to check for null because we've already checked length
         // above
@@ -87,17 +84,22 @@ implementation
       if (!sendBusy)
         report_problem();
 
-      reading = 0;
+      Lreading = 0;
+      Treading = 0;
+      Hreading = 0;
     }
 
-    if (call lightSensor.read() != SUCCESS)
-      report_problem();
+    if (Lreading < NREADINGS)
+      if (call lightSensor.read() != SUCCESS)
+        report_problem();
 
-    if (call tempSensor.read() != SUCCESS)
-      report_problem();
+    if (Treading < NREADINGS)
+      if (call tempSensor.read() != SUCCESS)
+        report_problem();
 
-    if (call humdSensor.read() != SUCCESS)
-      report_problem();
+    if (Hreading < NREADINGS)
+      if (call humdSensor.read() != SUCCESS)
+        report_problem();
   }
 
   // Radio message send done
@@ -118,8 +120,8 @@ implementation
       data = 0xffff;
       report_problem();
     }
-    if (reading < NREADINGS) 
-      local.lightData[reading++] = data;
+    if (Lreading < NREADINGS) 
+      local.lightData[Lreading++] = data;
   }
 
   // Read of temperature sensor done
@@ -129,8 +131,8 @@ implementation
       data = 0xffff;
       report_problem();
     }
-    if (reading < NREADINGS) 
-      local.tempData[reading++] = data;
+    if (Treading < NREADINGS) 
+      local.tempData[Treading++] = data;
   }
 
   // Read of humidity sensor done
@@ -140,7 +142,7 @@ implementation
       data = 0xffff;
       report_problem();
     }
-    if (reading < NREADINGS) 
-      local.humdData[reading++] = data;
+    if (Hreading < NREADINGS) 
+      local.humdData[Hreading++] = data;
   }
 }
