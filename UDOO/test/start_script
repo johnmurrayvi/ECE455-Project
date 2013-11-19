@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo 'Starting demo...'
+sudo python /home/ubuntu/project/demo.py &
+

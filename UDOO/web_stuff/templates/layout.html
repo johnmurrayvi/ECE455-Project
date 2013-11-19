@@ -1,0 +1,26 @@
+$def with (content)
+<html>
+<head>
+<title>$content.title</title>
+</head>
+<body>
+<div id="page" style="background-color:#EEEEEE;width:1200">
+<div id="header">
+<h3 style="margin-bottom:2;">$content.title</h3>
+</div>
+<div id="menu" style="background-color:#DDDDDD;height:1000px;width:100px;margin-right:5;float:left;">
+<b><a href="/">Home</a></b><br>
+<a href = "https://writelatex.s3.amazonaws.com/wxhfpvdcndss/output/7dca5160772fc60d0e9e025241c5f60101c81d27/ece455-final-project.pdf">Report</a><br>
+<a href="/log">Data</a><br>
+</div>
+
+<div id="content" style="background-color:#FFFFFF;height:800px;width:800px;float:left;">
+<img src='./static/plant1.jpg' height=200 />
+<img src='./static/udoo1.png' />
+<img src='./static/plant2.jpg' height=200 /><br>
+
+$:content
+
+</div>
+</body>
+</html>

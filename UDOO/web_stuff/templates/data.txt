@@ -1,0 +1,12 @@
+$def with (name)
+
+$if name:
+  I just wanted to say <em>hello</em> to $name.
+$else:
+  <em>Hello</em>, world!
+
+<img src='./static/udoo.png' />
+<img src='./tmp.jpg' />
+
+<p>More text.</p>
+
