@@ -1,4 +1,5 @@
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
 
 f = open ('./tmp_data.txt', 'r')
@@ -13,7 +14,7 @@ yData = []
 while (len (line) > 10):
   #print 'Processing: ' + line
   words = line.split (' ')
-  date = words [0] + ' ' + words [1] + ' ' + words [2]
+  date = words [0] + '_' + words [1] + '_' + words [2]
   #if words [0] == "event":
   #  print 'Hit Event!!!!!'
 
