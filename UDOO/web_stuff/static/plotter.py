@@ -32,10 +32,10 @@ while (len (line) > 10):
       n = n + 1
 
     if (old_date != date and n > 5):
+      plt.ylim ([0, 1023])
       plt.clf ()
       plt.plot (xData, yData)
       plt.title (old_date)
-      plt.ylim ([0, 1023])
       #plt.show ()
       image_name = old_date + "_fig.png"
       plt.savefig (image_name)
