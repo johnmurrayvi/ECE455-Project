@@ -1,5 +1,5 @@
 import serial, time
-import struct
+#import struct
 
 port = serial.Serial (port='/dev/ttyUSB0', baudrate=115200, timeout=0.2, bytesize=8, parity='N', stopbits=1, xonxoff=0, rtscts=0)
 port.flushInput ()
@@ -39,7 +39,7 @@ while 1:
       hum_vals.append ((int (ord (bytes_read [i])) << 8) + int (ord (bytes_read [i + 1])))
     print hum_vals
 
-    fout = open ('./telosb_data.txt', 'w')
+    fout = open ('./telosb_data.txt', 'a')
     fout.write (time.asctime ())
     fout.write (str(num_of_readings))
     fout.write (str(light_vals))
