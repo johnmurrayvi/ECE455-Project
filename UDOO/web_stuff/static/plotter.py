@@ -1,5 +1,8 @@
 import numpy as np
+import matplotlib
 import matplotlib.pyplot as plt
+
+matplotlib.use ('Agg')
 
 f = open ('./tmp_data.txt', 'r')
 old_date = ''
@@ -13,7 +16,7 @@ yData = []
 while (len (line) > 10):
   #print 'Processing: ' + line
   words = line.split (' ')
-  date = words [0] + ' ' + words [1] + ' ' + words [2]
+  date = words [0] + '_' + words [1] + '_' + words [2]
   #if words [0] == "event":
   #  print 'Hit Event!!!!!'
 
@@ -31,10 +34,10 @@ while (len (line) > 10):
       n = n + 1
 
     if (old_date != date and n > 5):
+      plt.ylim ([0, 1023])
       plt.clf ()
       plt.plot (xData, yData)
       plt.title (old_date)
-      plt.ylim ([0, 1023])
       #plt.show ()
       image_name = old_date + "_fig.png"
       plt.savefig (image_name)

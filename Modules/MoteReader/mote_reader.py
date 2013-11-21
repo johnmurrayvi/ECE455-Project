@@ -10,6 +10,7 @@ while 1:
   bytes_read = port.read (100)
   #print len (bytes_read)
   if len (bytes_read) == 77:
+    print time.asctime ()
     #for i in range (0, len(bytes_read)):
       #print i
       #print hex(int(ord(bytes_read [i])))
@@ -37,7 +38,19 @@ while 1:
     for i in range (54, 73, 2):
       hum_vals.append ((int (ord (bytes_read [i])) << 8) + int (ord (bytes_read [i + 1])))
     print hum_vals
-    #values = struct.unpack ('H', bytes_read [0:1])
+
+    fout = open ('./telosb_data.txt', 'a')
+    fout.write (time.asctime ())
+    fout.write ('\n')
+    fout.write (str(num_of_readings))
+    fout.write ('\n')
+    fout.write (str(light_vals))
+    fout.write ('\n')
+    fout.write (str(temp_vals))
+    fout.write ('\n')
+    fout.write (str(hum_vals))
+    fout.write ('\n')
+    fout.close ()
 
   time.sleep (.2)
   bytes_read = ''
