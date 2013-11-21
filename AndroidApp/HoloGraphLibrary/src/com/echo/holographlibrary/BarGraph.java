@@ -24,13 +24,20 @@
 package com.echo.holographlibrary;
 
 import android.content.Context;
-import android.graphics.*;
+import android.graphics.Bitmap;
 import android.graphics.Bitmap.Config;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.graphics.Point;
+import android.graphics.Rect;
+import android.graphics.RectF;
+import android.graphics.Region;
 import android.graphics.drawable.NinePatchDrawable;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;
 
@@ -168,7 +175,7 @@ public class BarGraph extends View {
     }
 
     @Override
-    public boolean onTouchEvent(@NotNull MotionEvent event) {
+    public boolean onTouchEvent(MotionEvent event) {
 
         Point point = new Point();
         point.x = (int) event.getX();
@@ -178,10 +185,10 @@ public class BarGraph extends View {
         for (Bar bar : points) {
             Region r = new Region();
             r.setPath(bar.getPath(), bar.getRegion());
-            if (r.contains(point.x, point.y) && event.getAction() == MotionEvent.ACTION_DOWN) {
+            if (r.contains((int) point.x, (int) point.y) && event.getAction() == MotionEvent.ACTION_DOWN) {
                 indexSelected = count;
             } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                if (r.contains(point.x, point.y) && listener != null) {
+                if (r.contains((int) point.x, (int) point.y) && listener != null) {
                     listener.onClick(indexSelected);
                 }
                 indexSelected = -1;

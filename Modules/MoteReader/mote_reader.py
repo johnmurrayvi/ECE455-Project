@@ -41,10 +41,15 @@ while 1:
 
     fout = open ('./telosb_data.txt', 'a')
     fout.write (time.asctime ())
+    fout.write ('\n')
     fout.write (str(num_of_readings))
+    fout.write ('\n')
     fout.write (str(light_vals))
+    fout.write ('\n')
     fout.write (str(temp_vals))
+    fout.write ('\n')
     fout.write (str(hum_vals))
+    fout.write ('\n')
     fout.close ()
 
   time.sleep (.2)
