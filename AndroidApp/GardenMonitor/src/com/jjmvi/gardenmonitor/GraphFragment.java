@@ -75,6 +75,8 @@ public class GraphFragment extends Fragment
   }
 
   
+  // Plot Stuff
+  private Boolean showOneDay = true;
   private Integer min = null;
   private Integer max = null;
   private ArrayList<Integer> dataToPlot = null;
@@ -151,11 +153,18 @@ public class GraphFragment extends Fragment
     LinePoint p;
 
     readData();
+    if (showOneDay == true) {
     Integer x = 0;
-    for (Integer y = 0; y < dataToPlot.size(); y++) {
-      p = new LinePoint(x, y);
+      for (Integer i = dataToPlot.size() - 240; i < dataToPlot.size(); i++) {
+        p = new LinePoint(x, dataToPlot.get(i));
       l.addPoint(p);
-      x += 6;      
+        x++;
+      }
+    } else {
+      for (Integer x = 0; x < dataToPlot.size(); x++) {
+        p = new LinePoint(x, dataToPlot.get(x));
+        l.addPoint(p);
+      }
     }
 
     // Don't show points
@@ -166,12 +175,12 @@ public class GraphFragment extends Fragment
 
     final LineGraph lG = (LineGraph) v.findViewById(R.id.linegraph);
     lG.addLine(l);
-//    lG.setRangeY(0, 255);
+    lG.setRangeY(0, 255);
     lG.setLineToFill(0);
     lG.setFillColor(Color.parseColor(tabColors[position]));
     lG.setFillAlpha(100);
     lG.setFillStrokeWidth(3);
-    lG.showMinAndMaxValues(true);
+//    lG.showMinAndMaxValues(true);
 
 //    lG.setOnPointClickedListener(new OnPointClickedListener()
 //    {
