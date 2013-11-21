@@ -7,7 +7,7 @@ enum {
   NREADINGS = 10,
 
   /* Default sampling period. */
-  DEFAULT_INTERVAL = 360000, // 6 minutes
+  DEFAULT_INTERVAL = 36000, // 6 minutes
 
   AM_GDATA = 0x99
 };
