@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
+//import java.util.Map;
 
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -23,8 +23,10 @@ import com.jjmvi.gardenmonitor.MoteDataXMLParser.Reading;
 
 import android.app.ActionBar.LayoutParams;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -33,6 +35,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
 
+@SuppressWarnings("unused")
 public class GraphFragment extends Fragment
 {
 //  public static Map<String, ArrayList<Integer>> data = null;
@@ -87,6 +90,8 @@ public class GraphFragment extends Fragment
   private Boolean showOneDay = true;
 //  private Boolean showOneDay = false;
 
+  private Boolean showMinMax = false;
+
   private Integer min = null;
   private Integer max = null;
   private ArrayList<Integer> dataToPlot = null;
@@ -137,7 +142,7 @@ public class GraphFragment extends Fragment
   }
 
   private void readData()
-  {    
+  {
 /*
     if (moistureData == null)
       moistureData = readRawTextFile(getActivity(), R.raw.moisture_values);
@@ -151,7 +156,8 @@ public class GraphFragment extends Fragment
     } catch (IOException e) {
       // TODO Auto-generated catch block
       e.printStackTrace();
-    } */
+    }
+*/
     if (moistureData == null)
       moistureData = readRawTextFile(getActivity(), R.raw.moisture_values);
     if (temperatureData == null)
@@ -210,6 +216,11 @@ public class GraphFragment extends Fragment
     readData();
     getDataToPlot();
 
+    SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getActivity());
+    showOneDay = sharedPrefs.getBoolean("oneday_pref", false);
+    showMinMax = sharedPrefs.getBoolean("minmax_pref", false);
+    
+
     if (showOneDay == true && dataToPlot.size() > 240) {
       Integer x = 0;
       Integer i = 0;
@@ -254,7 +265,10 @@ public class GraphFragment extends Fragment
     lG.setFillColor(Color.parseColor(tabColors[position]));
     lG.setFillAlpha(100);
     lG.setFillStrokeWidth(3);
-//    lG.showMinAndMaxValues(true);
+
+    if (showMinMax) {
+      lG.showMinAndMaxValues(true);
+    }
 
 //    lG.setOnPointClickedListener(new OnPointClickedListener()
 //    {

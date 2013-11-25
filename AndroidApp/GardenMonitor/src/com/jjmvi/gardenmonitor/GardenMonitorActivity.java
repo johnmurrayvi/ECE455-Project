@@ -7,22 +7,26 @@ import java.util.ArrayList;
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.FragmentTransaction;
-import android.graphics.Color;
+import android.content.Intent;
+//import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.view.PagerTabStrip;
+//import android.support.v4.view.PagerTabStrip;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
+import android.view.MenuItem;
 
 
 public class GardenMonitorActivity extends FragmentActivity
 {
+  public static boolean refreshDisplay = true;
+
   protected String dataFeed = "http://69.1.47.239/";
   private TabsAdapter mTabsAdapter;
   private ViewPager mViewPager;
 
-  private String[] tabColors = { "#378FFD", "#FF8700", "#5FD7FE", "#D50929", "#378F2A" };
+//  private String[] tabColors = { "#378FFD", "#FF8700", "#5FD7FE", "#D50929", "#378F2A" };
 
   @Override
   protected void onCreate(Bundle savedInstanceState)
@@ -88,8 +92,29 @@ public class GardenMonitorActivity extends FragmentActivity
       super.onRestoreInstanceState(savedInstanceState);
   }
 
+  // Handles the user's menu selection.
+  @Override
+  public boolean onOptionsItemSelected(MenuItem item)
+  {
+    switch (item.getItemId()) {
+      case R.id.action_settings:
+        Intent settingsActivity = new Intent(getBaseContext(), SettingsActivity.class);
+        startActivity(settingsActivity);
+        return true;
+
+      case R.id.action_refresh:
+        // fetch new data, invalidate graph views so they are recreated
+//        loadPage();
+        return true;
+
+      default:
+        return super.onOptionsItemSelected(item);
+    }
+  }
+
   public static class TabsAdapter extends FragmentStatePagerAdapter implements ActionBar.TabListener, ViewPager.OnPageChangeListener
   {
+    @SuppressWarnings("unused")
     private final FragmentActivity mContext;
     private final ActionBar mActionBar;
     private final ViewPager mViewPager;
@@ -98,7 +123,9 @@ public class GardenMonitorActivity extends FragmentActivity
 
     static final class TabInfo
     {
+      @SuppressWarnings("unused")
       private final Class<?> clss;
+      @SuppressWarnings("unused")
       private final Bundle args;
       
       public TabInfo(Class<?> _class, Bundle _args)
@@ -170,6 +197,7 @@ public class GardenMonitorActivity extends FragmentActivity
       // TODO Auto-generated method stub
     }
 
+    @SuppressWarnings("unused")
     @Override
     public android.support.v4.app.Fragment getItem(int position)
     {
