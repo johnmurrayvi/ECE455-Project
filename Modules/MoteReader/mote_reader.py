@@ -1,5 +1,5 @@
 import serial, time
-import struct
+#import struct
 
 port = serial.Serial (port='/dev/ttyUSB0', baudrate=115200, timeout=0.2, bytesize=8, parity='N', stopbits=1, xonxoff=0, rtscts=0)
 port.flushInput ()

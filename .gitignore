@@ -1,3 +1,5 @@
 AndroidApp/*/bin
 AndroidApp/*/gen
 Motes/*/build
+*.o
+Modules/parse_to_xml/parse_to_xml
