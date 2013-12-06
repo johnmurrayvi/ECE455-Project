@@ -74,10 +74,18 @@ Again, the sampling interval is 6 minutes (i.e. 10 samples an hour).
 --- ADC Conversion Equations ---
 
 Temperature:
-Ta [ºC] = -39 + 0.0098 * READING_VALUE
+Ta [ºC] = -39 + 0.0098 * RAW_VALUE
  
 Humidity:
-a = READING_VALUE
+a = RAW_VALUE
 b = -0.0000028 * a * a + 0.0405 * a – 4
 Hum [%] = (Ta [ºC] – 25) * (0.01 + 0.00008 * a) + b
 
+Light:
+Vref = 1.5 V
+Vsensor = (RAW_VALUE / 4096) * Vref
+Isensor = Vsensor / 100,000
+    For S1087:
+        Lux = 0.625 * 1e6 * Isensor * 1000
+    For S1087-01:
+        Lux = 0.769 * 1e5 * Isensor * 1000
