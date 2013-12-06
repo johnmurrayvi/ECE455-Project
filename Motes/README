@@ -69,3 +69,15 @@ The data arrays are in this order: Light (PAR), Temperature, Humidity.
     05 66 05 61 05 5C 05 58 05 52 05 4C 05 48 05 44 05 40 05 3E     Humidity Sensor Data
 
 Again, the sampling interval is 6 minutes (i.e. 10 samples an hour).
+
+
+--- ADC Conversion Equations ---
+
+Temperature:
+Ta [ºC] = -39 + 0.0098 * READING_VALUE
+ 
+Humidity:
+a = READING_VALUE
+b = -0.0000028 * a * a + 0.0405 * a – 4
+Hum [%] = (Ta [ºC] – 25) * (0.01 + 0.00008 * a) + b
+
