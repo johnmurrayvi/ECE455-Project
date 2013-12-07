@@ -1,0 +1,439 @@
+/scripts/setup.php" - 404 Not Found
+Thu Dec  5 06:15:59 2013:sensor = 564 output = 140
+Thu Dec  5 06:21:59 2013:sensor = 557 output = 138
+Thu Dec  5 06:27:59 2013:sensor = 557 output = 138
+Thu Dec  5 06:33:59 2013:sensor = 560 output = 139
+Thu Dec  5 06:39:59 2013:sensor = 562 output = 140
+46.229.157.226:36421 - - [05/Dec/2013 06:42:34] "HTTP/1.1 HEAD /" - 200 OK
+Thu Dec  5 06:45:59 2013:sensor = 554 output = 138
+Thu Dec  5 06:51:59 2013:sensor = 558 output = 139
+Thu Dec  5 06:57:59 2013:sensor = 551 output = 137
+Thu Dec  5 07:04:00 2013:sensor = 555 output = 138
+Thu Dec  5 07:10:00 2013:sensor = 555 output = 138
+Thu Dec  5 07:16:00 2013:sensor = 562 output = 140
+Thu Dec  5 07:22:00 2013:sensor = 561 output = 139
+Thu Dec  5 07:28:00 2013:sensor = 561 output = 139
+Thu Dec  5 07:34:00 2013:sensor = 561 output = 139
+Thu Dec  5 07:40:00 2013:sensor = 565 output = 140
+Thu Dec  5 07:46:00 2013:sensor = 550 output = 137
+Thu Dec  5 07:52:00 2013:sensor = 561 output = 139
+Thu Dec  5 07:58:00 2013:sensor = 556 output = 138
+72.204.76.211:1443 - - [05/Dec/2013 07:58:56] "HTTP/1.1 GET /HNAP1/" - 404 Not Found
+Thu Dec  5 08:04:00 2013:sensor = 556 output = 138
+Thu Dec  5 08:10:00 2013:sensor = 552 output = 137
+Thu Dec  5 08:16:00 2013:sensor = 558 output = 139
+Thu Dec  5 08:22:00 2013:sensor = 559 output = 139
+Thu Dec  5 08:28:00 2013:sensor = 565 output = 140
+Thu Dec  5 08:34:00 2013:sensor = 535 output = 133
+Thu Dec  5 08:40:00 2013:sensor = 552 output = 137
+Thu Dec  5 08:46:00 2013:sensor = 558 output = 139
+Thu Dec  5 08:52:00 2013:sensor = 563 output = 140
+Thu Dec  5 08:58:00 2013:sensor = 558 output = 139
+Thu Dec  5 09:04:00 2013:sensor = 552 output = 137
+Thu Dec  5 09:10:00 2013:sensor = 553 output = 137
+Thu Dec  5 09:16:00 2013:sensor = 556 output = 138
+Thu Dec  5 09:22:00 2013:sensor = 527 output = 131
+Thu Dec  5 09:28:00 2013:sensor = 554 output = 138
+Thu Dec  5 09:34:00 2013:sensor = 551 output = 137
+Thu Dec  5 09:40:00 2013:sensor = 552 output = 137
+Thu Dec  5 09:46:00 2013:sensor = 554 output = 138
+Thu Dec  5 09:52:00 2013:sensor = 557 output = 138
+Thu Dec  5 09:58:00 2013:sensor = 556 output = 138
+87.106.244.93:50130 - - [05/Dec/2013 09:58:55] "HTTP/1.1 GET /muieblackcat" - 404 Not Found
+87.106.244.93:56521 - - [05/Dec/2013 09:59:00] "HTTP/1.1 GET //phpMyAdmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:33874 - - [05/Dec/2013 09:59:06] "HTTP/1.1 GET //phpmyadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:35222 - - [05/Dec/2013 09:59:08] "HTTP/1.1 GET /muieblackcat" - 404 Not Found
+87.106.244.93:41126 - - [05/Dec/2013 09:59:12] "HTTP/1.1 GET //pma/scripts/setup.php" - 404 Not Found
+87.106.244.93:42249 - - [05/Dec/2013 09:59:13] "HTTP/1.1 GET //phpMyAdmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:49525 - - [05/Dec/2013 09:59:18] "HTTP/1.1 GET //myadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:51780 - - [05/Dec/2013 09:59:19] "HTTP/1.1 GET //phpmyadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:60485 - - [05/Dec/2013 09:59:25] "HTTP/1.1 GET //pma/scripts/setup.php" - 404 Not Found
+87.106.244.93:38485 - - [05/Dec/2013 09:59:31] "HTTP/1.1 GET //myadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:42814 - - [05/Dec/2013 09:59:36] "HTTP/1.1 GET /muieblackcat" - 404 Not Found
+87.106.244.93:44009 - - [05/Dec/2013 09:59:37] "HTTP/1.1 GET /muieblackcat" - 404 Not Found
+87.106.244.93:44878 - - [05/Dec/2013 09:59:37] "HTTP/1.1 GET //MyAdmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:49602 - - [05/Dec/2013 09:59:43] "HTTP/1.1 GET //phpMyAdmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:48534 - - [05/Dec/2013 09:59:43] "HTTP/1.1 GET //phpMyAdmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:55220 - - [05/Dec/2013 09:59:48] "HTTP/1.1 GET //phpmyadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:55222 - - [05/Dec/2013 09:59:48] "HTTP/1.1 GET //phpmyadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:60548 - - [05/Dec/2013 09:59:54] "HTTP/1.1 GET //pma/scripts/setup.php" - 404 Not Found
+87.106.244.93:60558 - - [05/Dec/2013 09:59:54] "HTTP/1.1 GET //pma/scripts/setup.php" - 404 Not Found
+87.106.244.93:36927 - - [05/Dec/2013 10:00:00] "HTTP/1.1 GET //myadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:36924 - - [05/Dec/2013 10:00:00] "HTTP/1.1 GET //myadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:38134 - - [05/Dec/2013 10:00:06] "HTTP/1.1 GET //MyAdmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:38140 - - [05/Dec/2013 10:00:06] "HTTP/1.1 GET //MyAdmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:59424 - - [05/Dec/2013 10:02:08] "HTTP/1.1 GET /muieblackcat" - 404 Not Found
+87.106.244.93:34472 - - [05/Dec/2013 10:02:13] "HTTP/1.1 GET //phpMyAdmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:39268 - - [05/Dec/2013 10:02:19] "HTTP/1.1 GET //phpmyadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:41652 - - [05/Dec/2013 10:02:25] "HTTP/1.1 GET //pma/scripts/setup.php" - 404 Not Found
+87.106.244.93:43884 - - [05/Dec/2013 10:02:31] "HTTP/1.1 GET //myadmin/scripts/setup.php" - 404 Not Found
+87.106.244.93:47086 - - [05/Dec/2013 10:02:37] "HTTP/1.1 GET //MyAdmin/scripts/setup.php" - 404 Not Found
+Thu Dec  5 10:04:01 2013:sensor = 550 output = 137
+Thu Dec  5 10:10:01 2013:sensor = 558 output = 139
+Thu Dec  5 10:16:01 2013:sensor = 555 output = 138
+Thu Dec  5 10:22:01 2013:sensor = 550 output = 137
+Thu Dec  5 10:28:01 2013:sensor = 557 output = 138
+Thu Dec  5 10:34:01 2013:sensor = 550 output = 137
+Thu Dec  5 10:40:01 2013:sensor = 562 output = 140
+Thu Dec  5 10:46:01 2013:sensor = 559 output = 139
+Thu Dec  5 10:52:01 2013:sensor = 562 output = 140
+Thu Dec  5 10:58:01 2013:sensor = 544 output = 135
+Thu Dec  5 11:04:01 2013:sensor = 562 output = 140
+Thu Dec  5 11:10:01 2013:sensor = 547 output = 136
+Thu Dec  5 11:16:01 2013:sensor = 569 output = 141
+Thu Dec  5 11:22:01 2013:sensor = 570 output = 142
+Thu Dec  5 11:28:01 2013:sensor = 556 output = 138
+Thu Dec  5 11:34:01 2013:sensor = 550 output = 137
+Thu Dec  5 11:40:01 2013:sensor = 556 output = 138
+Thu Dec  5 11:46:01 2013:sensor = 556 output = 138
+Thu Dec  5 11:52:01 2013:sensor = 561 output = 139
+Thu Dec  5 11:58:01 2013:sensor = 560 output = 139
+Thu Dec  5 12:04:01 2013:sensor = 558 output = 139
+Thu Dec  5 12:10:01 2013:sensor = 553 output = 137
+Thu Dec  5 12:16:01 2013:sensor = 556 output = 138
+76.14.254.65:33818 - - [05/Dec/2013 12:16:34] "HTTP/1.1 GET /HNAP1/" - 404 Not Found
+Thu Dec  5 12:22:01 2013:sensor = 556 output = 138
+Thu Dec  5 12:28:01 2013:sensor = 564 output = 140
+Thu Dec  5 12:34:01 2013:sensor = 558 output = 139
+Thu Dec  5 12:40:01 2013:sensor = 556 output = 138
+Thu Dec  5 12:46:01 2013:sensor = 561 output = 139
+Thu Dec  5 12:52:01 2013:sensor = 571 output = 142
+Thu Dec  5 12:58:01 2013:sensor = 556 output = 138
+Thu Dec  5 13:04:02 2013:sensor = 554 output = 138
+Thu Dec  5 13:10:02 2013:sensor = 555 output = 138
+Thu Dec  5 13:16:02 2013:sensor = 554 output = 138
+Thu Dec  5 13:22:02 2013:sensor = 546 output = 136
+Thu Dec  5 13:28:02 2013:sensor = 550 output = 137
+Thu Dec  5 13:34:02 2013:sensor = 551 output = 137
+Thu Dec  5 13:40:02 2013:sensor = 571 output = 142
+Thu Dec  5 13:46:02 2013:sensor = 555 output = 138
+Thu Dec  5 13:52:02 2013:sensor = 560 output = 139
+Thu Dec  5 13:58:02 2013:sensor = 557 output = 138
+Thu Dec  5 14:04:02 2013:sensor = 560 output = 139
+Thu Dec  5 14:10:02 2013:sensor = 562 output = 140
+Thu Dec  5 14:16:02 2013:sensor = 555 output = 138
+Thu Dec  5 14:22:02 2013:sensor = 555 output = 138
+Thu Dec  5 14:28:02 2013:sensor = 563 output = 140
+Thu Dec  5 14:34:02 2013:sensor = 559 output = 139
+144.191.148.4:20381 - - [05/Dec/2013 14:35:35] "HTTP/1.1 GET /" - 200 OK
+144.191.148.4:20381 - - [05/Dec/2013 14:35:36] "HTTP/1.1 GET /static/plant1.jpg" - 200 
+144.191.148.4:20506 - - [05/Dec/2013 14:35:36] "HTTP/1.1 GET /static/udoo1.png" - 200 
+144.191.148.4:20507 - - [05/Dec/2013 14:35:36] "HTTP/1.1 GET /static/plant2.jpg" - 200 
+144.191.148.4:20506 - - [05/Dec/2013 14:35:37] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+144.191.148.4:20506 - - [05/Dec/2013 14:35:38] "HTTP/1.1 GET /log" - 200 OK
+Thu Dec  5 14:40:02 2013:sensor = 609 output = 151
+Thu Dec  5 14:46:02 2013:sensor = 580 output = 144
+Thu Dec  5 14:52:02 2013:sensor = 569 output = 141
+65.78.50.34:49728 - - [05/Dec/2013 14:53:00] "HTTP/1.1 GET /HNAP1/" - 404 Not Found
+Thu Dec  5 14:58:02 2013:sensor = 565 output = 140
+Thu Dec  5 15:04:02 2013:sensor = 571 output = 142
+Thu Dec  5 15:10:02 2013:sensor = 568 output = 141
+Thu Dec  5 15:16:02 2013:sensor = 563 output = 140
+Thu Dec  5 15:22:02 2013:sensor = 574 output = 143
+Thu Dec  5 15:28:02 2013:sensor = 576 output = 143
+Traceback (most recent call last):
+  File "mote_reader.py", line 10, in <module>
+    bytes_read = port.read (100)
+  File "/usr/local/lib/python2.7/dist-packages/serial/serialposix.py", line 460, in read
+    raise SerialException('device reports readiness to read but returned no data (device disconnected?)')
+serial.serialutil.SerialException: device reports readiness to read but returned no data (device disconnected?)
+Thu Dec  5 15:34:02 2013:sensor = 568 output = 141
+Thu Dec  5 15:40:02 2013:sensor = 583 output = 145
+Thu Dec  5 15:46:02 2013:sensor = 573 output = 142
+Thu Dec  5 15:52:02 2013:sensor = 562 output = 140
+Thu Dec  5 15:58:02 2013:sensor = 569 output = 141
+Thu Dec  5 16:04:03 2013:sensor = 559 output = 139
+Thu Dec  5 16:10:03 2013:sensor = 563 output = 140
+Thu Dec  5 16:16:03 2013:sensor = 572 output = 142
+Thu Dec  5 16:22:03 2013:sensor = 564 output = 140
+Thu Dec  5 16:28:03 2013:sensor = 570 output = 142
+Thu Dec  5 16:34:03 2013:sensor = 570 output = 142
+Thu Dec  5 16:40:03 2013:sensor = 594 output = 148
+Thu Dec  5 16:46:03 2013:sensor = 574 output = 143
+Thu Dec  5 16:52:03 2013:sensor = 567 output = 141
+Thu Dec  5 16:58:03 2013:sensor = 567 output = 141
+Thu Dec  5 17:04:03 2013:sensor = 569 output = 141
+Thu Dec  5 17:10:03 2013:sensor = 568 output = 141
+Thu Dec  5 17:16:03 2013:sensor = 569 output = 141
+Thu Dec  5 17:22:03 2013:sensor = 572 output = 142
+Thu Dec  5 17:28:03 2013:sensor = 573 output = 142
+Thu Dec  5 17:34:03 2013:sensor = 568 output = 141
+Thu Dec  5 17:40:03 2013:sensor = 567 output = 141
+Thu Dec  5 17:46:03 2013:sensor = 570 output = 142
+Thu Dec  5 17:52:03 2013:sensor = 571 output = 142
+Thu Dec  5 17:58:03 2013:sensor = 568 output = 141
+Thu Dec  5 18:04:03 2013:sensor = 565 output = 140
+Thu Dec  5 18:10:03 2013:sensor = 576 output = 143
+Thu Dec  5 18:16:03 2013:sensor = 565 output = 140
+Thu Dec  5 18:22:03 2013:sensor = 571 output = 142
+Thu Dec  5 18:28:03 2013:sensor = 569 output = 141
+Thu Dec  5 18:34:03 2013:sensor = 568 output = 141
+Thu Dec  5 18:40:03 2013:sensor = 561 output = 139
+Thu Dec  5 18:46:03 2013:sensor = 550 output = 137
+Thu Dec  5 18:52:03 2013:sensor = 567 output = 141
+Thu Dec  5 18:58:04 2013:sensor = 568 output = 141
+Thu Dec  5 19:04:04 2013:sensor = 567 output = 141
+Thu Dec  5 19:10:04 2013:sensor = 573 output = 142
+Thu Dec  5 19:16:04 2013:sensor = 569 output = 141
+ps x
+  PID TTY      STAT   TIME COMMAND
+ 5810 ?        Ssl    0:01 /usr/bin/gnome-session --session=gnome-fall
+ 5835 ?        Ss     0:01 /usr/bin/ssh-agent /usr/bin/dbus-launch --e
+ 5838 ?        S      0:00 /usr/bin/dbus-launch --exit-with-session /u
+ 5839 ?        Ss     0:03 //bin/dbus-daemon --fork --print-pid 5 --pr
+ 5841 ?        S      0:00 /usr/lib/gvfs/gvfsd
+ 5846 ?        Sl     0:12 /usr/lib/gnome-settings-daemon/gnome-settin
+ 5853 ?        Sl     0:00 /usr/bin/gnome-keyring-daemon --start --com
+ 5907 ?        S      0:00 /usr/lib/libgconf2-4/gconfd-2
+ 5962 ?        Sl     0:00 /usr/lib/gnome-settings-daemon/gsd-printer
+ 5963 ?        S      0:10 metacity
+ 5975 ?        S<l    0:00 /usr/bin/pulseaudio --start --log-target=sy
+ 5978 ?        Sl     0:43 gnome-panel
+ 5984 ?        Sl     0:00 /usr/lib/d-conf/dconf-service
+ 5990 ?        Sl     0:10 nautilus -n
+ 5991 ?        Sl     0:00 gnome-sound-applet
+ 5992 ?        Sl     0:00 /usr/lib/gnome-settings-daemon/gnome-fallba
+ 5993 ?        Sl     0:00 bluetooth-applet
+ 5994 ?        Sl     0:00 /usr/lib/policykit-1-gnome/polkit-gnome-aut
+ 5995 ?        Sl     0:30 nm-applet
+ 6002 ?        S      0:00 /usr/lib/gvfs/gvfs-gdu-volume-monitor
+ 6016 ?        Sl     0:14 /usr/lib/gvfs/gvfs-afc-volume-monitor
+ 6019 ?        S      0:00 /usr/lib/gvfs/gvfs-gphoto2-volume-monitor
+ 6021 ?        S      0:00 /usr/lib/gvfs/gvfsd-trash --spawner :1.1 /o
+ 6032 ?        S      0:00 /usr/lib/gvfs/gvfsd-metadata
+ 6120 ?        S      0:00 sshd: ubuntu@pts/0  
+ 6125 pts/0    Ss     0:00 -bash
+ 6145 pts/0    S      0:32 python serial_test.py
+ 6149 pts/0    Sl     0:27 python code.py
+10586 pts/0    R+     0:00 ps x
+[4]+  Exit 1                  sudo python mote_reader.py
+ubuntu@imx6-qsdl:~/ECE455-Project/Modules/MoteReader$ Thu Dec  5 19:22:04 2013:sensor = 568 output = 141
+ll
+total 236
+drwxrwxr-x 2 ubuntu ubuntu   4096 2013-11-20 19:58 ./
+drwxrwxr-x 4 ubuntu ubuntu   4096 2013-11-19 22:42 ../
+-rw-rw-r-- 1 ubuntu ubuntu   1630 2013-11-20 19:56 mote_reader.py
+-rw-rw-r-- 1 ubuntu ubuntu  31116 2013-11-20 19:57 old_telosb_data.txt
+-rw-rw-r-- 1 ubuntu ubuntu 190140 2013-11-25 03:15 telosb_data.txt
+ubuntu@imx6-qsdl:~/ECE455-Project/Modules/MoteReader$ cd
+ubuntu@imx6-qsdl:~$ cd project/
+ubuntu@imx6-qsdl:~/project$ ll
+total 452
+drwxrwxr-x  5 ubuntu ubuntu   4096 2013-12-05 14:39 ./
+drwxr-xr-x 31 ubuntu ubuntu   4096 2013-12-03 23:31 ../
+-rw-rw-r--  1 ubuntu ubuntu    908 2013-10-27 15:32 ADT_blink.py
+drwxrwxr-x  2 ubuntu ubuntu   4096 2013-11-09 22:23 Ard_read_and_trans/
+-rw-rw-r--  1 ubuntu ubuntu 100872 2013-11-17 14:15 data_11-17-13.txt
+-rw-rw-r--  1 ubuntu ubuntu  25041 2013-11-09 21:42 data_11-9-13.txt
+-rw-rw-r--  1 ubuntu ubuntu    559 2013-11-07 20:06 serial_test.py
+drwxrwxr-x  2 ubuntu ubuntu   4096 2013-12-05 13:06 test/
+-rw-rw-r--  1 ubuntu ubuntu 273500 2013-12-05 19:22 tmp2.txt
+-rw-r--r--  1 ubuntu ubuntu  16384 2013-11-15 21:21 .tmp2.txt.swp
+-rw-rw-r--  1 ubuntu ubuntu    245 2013-11-20 22:46 water.py
+drwxrwxr-x  5 ubuntu ubuntu   4096 1969-12-31 19:56 web_stuff/
+ubuntu@imx6-qsdl:~/project$ python water.py 
+ubuntu@imx6-qsdl:~/project$ Thu Dec  5 19:28:04 2013:sensor = 708 output = 176
+Thu Dec  5 19:34:04 2013:sensor = 726 output = 180
+Thu Dec  5 19:40:04 2013:sensor = 718 output = 178
+Thu Dec  5 19:46:04 2013:sensor = 697 output = 173
+Thu Dec  5 19:52:04 2013:sensor = 678 output = 169
+Thu Dec  5 19:58:04 2013:sensor = 669 output = 166
+Thu Dec  5 20:04:04 2013:sensor = 649 output = 161
+Thu Dec  5 20:10:04 2013:sensor = 644 output = 160
+Thu Dec  5 20:16:04 2013:sensor = 640 output = 159
+Thu Dec  5 20:22:04 2013:sensor = 633 output = 157
+Thu Dec  5 20:28:04 2013:sensor = 630 output = 157
+Thu Dec  5 20:34:04 2013:sensor = 631 output = 157
+Thu Dec  5 20:40:04 2013:sensor = 626 output = 156
+Thu Dec  5 20:46:04 2013:sensor = 619 output = 154
+Thu Dec  5 20:52:04 2013:sensor = 622 output = 155
+Thu Dec  5 20:58:04 2013:sensor = 623 output = 155
+Thu Dec  5 21:04:04 2013:sensor = 625 output = 155
+Thu Dec  5 21:10:04 2013:sensor = 624 output = 155
+Thu Dec  5 21:16:04 2013:sensor = 615 output = 153
+Thu Dec  5 21:22:04 2013:sensor = 624 output = 155
+Thu Dec  5 21:28:04 2013:sensor = 627 output = 156
+Thu Dec  5 21:34:04 2013:sensor = 626 output = 156
+Thu Dec  5 21:40:04 2013:sensor = 623 output = 155
+Thu Dec  5 21:46:04 2013:sensor = 629 output = 156
+Thu Dec  5 21:52:04 2013:sensor = 624 output = 155
+Thu Dec  5 21:58:05 2013:sensor = 623 output = 155
+Thu Dec  5 22:04:05 2013:sensor = 613 output = 152
+Thu Dec  5 22:10:05 2013:sensor = 614 output = 153
+Thu Dec  5 22:16:05 2013:sensor = 613 output = 152
+Thu Dec  5 22:22:05 2013:sensor = 626 output = 156
+Thu Dec  5 22:28:05 2013:sensor = 619 output = 154
+Thu Dec  5 22:34:05 2013:sensor = 607 output = 151
+208.109.249.220:41396 - - [05/Dec/2013 22:38:39] "HTTP/1.1 GET /w00tw00t.at.blackhats.romanian.anti-sec:)" - 404 Not Found
+208.109.249.220:47104 - - [05/Dec/2013 22:38:46] "HTTP/1.1 GET /phpMyAdmin/scripts/setup.php" - 404 Not Found
+208.109.249.220:51306 - - [05/Dec/2013 22:38:51] "HTTP/1.1 GET /phpmyadmin/scripts/setup.php" - 404 Not Found
+208.109.249.220:55347 - - [05/Dec/2013 22:38:57] "HTTP/1.1 GET /pma/scripts/setup.php" - 404 Not Found
+208.109.249.220:60051 - - [05/Dec/2013 22:39:03] "HTTP/1.1 GET /myadmin/scripts/setup.php" - 404 Not Found
+208.109.249.220:39635 - - [05/Dec/2013 22:39:09] "HTTP/1.1 GET /MyAdmin/scripts/setup.php" - 404 Not Found
+Thu Dec  5 22:40:05 2013:sensor = 621 output = 154
+Thu Dec  5 22:46:05 2013:sensor = 617 output = 153
+Thu Dec  5 22:52:05 2013:sensor = 620 output = 154
+Thu Dec  5 22:58:05 2013:sensor = 608 output = 151
+Thu Dec  5 23:04:05 2013:sensor = 614 output = 153
+Thu Dec  5 23:10:05 2013:sensor = 623 output = 155
+Thu Dec  5 23:16:05 2013:sensor = 608 output = 151
+Thu Dec  5 23:22:05 2013:sensor = 612 output = 152
+Thu Dec  5 23:28:05 2013:sensor = 612 output = 152
+Thu Dec  5 23:34:05 2013:sensor = 608 output = 151
+Thu Dec  5 23:40:05 2013:sensor = 613 output = 152
+Thu Dec  5 23:46:05 2013:sensor = 614 output = 153
+Thu Dec  5 23:52:05 2013:sensor = 617 output = 153
+Thu Dec  5 23:58:05 2013:sensor = 604 output = 150
+Fri Dec  6 00:04:05 2013:sensor = 612 output = 152
+Fri Dec  6 00:10:05 2013:sensor = 610 output = 152
+Fri Dec  6 00:16:05 2013:sensor = 611 output = 152
+Fri Dec  6 00:22:05 2013:sensor = 601 output = 149
+Fri Dec  6 00:28:05 2013:sensor = 613 output = 152
+Fri Dec  6 00:34:05 2013:sensor = 615 output = 153
+Fri Dec  6 00:40:05 2013:sensor = 610 output = 152
+Fri Dec  6 00:46:05 2013:sensor = 601 output = 149
+Fri Dec  6 00:52:05 2013:sensor = 614 output = 153
+Fri Dec  6 00:58:06 2013:sensor = 611 output = 152
+Fri Dec  6 01:04:06 2013:sensor = 611 output = 152
+Fri Dec  6 01:10:06 2013:sensor = 612 output = 152
+Fri Dec  6 01:16:06 2013:sensor = 615 output = 153
+198.23.145.82:47033 - - [06/Dec/2013 01:18:23] "HTTP/1.1 POST //cgi-bin/php" - 404 Not Found
+198.23.145.82:47032 - - [06/Dec/2013 01:18:23] "HTTP/1.1 POST /cgi-bin/php/cgin/php" - 404 Not Found
+198.23.145.82:47032 - - [06/Dec/2013 01:18:23] "HTTP/1.1 POST /cgi-bin/php5/cgin/php" - 404 Not Found
+198.23.145.82:47032 - - [06/Dec/2013 01:18:23] "HTTP/1.1 POST /cgi-bin/php-cgi/cgin/php" - 404 Not Found
+198.23.145.82:47032 - - [06/Dec/2013 01:18:24] "HTTP/1.1 POST /cgi-bin/php.cgi/cgin/php" - 404 Not Found
+Fri Dec  6 01:22:06 2013:sensor = 596 output = 148
+Fri Dec  6 01:28:06 2013:sensor = 608 output = 151
+Fri Dec  6 01:34:06 2013:sensor = 606 output = 151
+Fri Dec  6 01:40:06 2013:sensor = 604 output = 150
+Fri Dec  6 01:46:06 2013:sensor = 607 output = 151
+Fri Dec  6 01:52:06 2013:sensor = 610 output = 152
+Fri Dec  6 01:58:06 2013:sensor = 609 output = 151
+Fri Dec  6 02:04:06 2013:sensor = 600 output = 149
+Fri Dec  6 02:10:06 2013:sensor = 613 output = 152
+Fri Dec  6 02:16:06 2013:sensor = 599 output = 149
+Fri Dec  6 02:22:06 2013:sensor = 611 output = 152
+Fri Dec  6 02:28:06 2013:sensor = 602 output = 150
+Fri Dec  6 02:34:06 2013:sensor = 600 output = 149
+Fri Dec  6 02:40:06 2013:sensor = 600 output = 149
+Fri Dec  6 02:46:06 2013:sensor = 599 output = 149
+Fri Dec  6 02:52:06 2013:sensor = 602 output = 150
+Fri Dec  6 02:58:06 2013:sensor = 601 output = 149
+Fri Dec  6 03:04:06 2013:sensor = 612 output = 152
+Fri Dec  6 03:10:06 2013:sensor = 600 output = 149
+Fri Dec  6 03:16:06 2013:sensor = 609 output = 151
+Fri Dec  6 03:22:06 2013:sensor = 598 output = 149
+Fri Dec  6 03:28:06 2013:sensor = 601 output = 149
+Fri Dec  6 03:34:06 2013:sensor = 593 output = 147
+Fri Dec  6 03:40:06 2013:sensor = 596 output = 148
+Fri Dec  6 03:46:06 2013:sensor = 601 output = 149
+Fri Dec  6 03:52:06 2013:sensor = 605 output = 150
+Fri Dec  6 03:58:07 2013:sensor = 594 output = 148
+Fri Dec  6 04:04:07 2013:sensor = 596 output = 148
+Fri Dec  6 04:10:07 2013:sensor = 593 output = 147
+Fri Dec  6 04:16:07 2013:sensor = 602 output = 150
+Fri Dec  6 04:22:07 2013:sensor = 586 output = 146
+Fri Dec  6 04:28:07 2013:sensor = 593 output = 147
+Fri Dec  6 04:34:07 2013:sensor = 599 output = 149
+Fri Dec  6 04:40:07 2013:sensor = 593 output = 147
+Fri Dec  6 04:46:07 2013:sensor = 598 output = 149
+Fri Dec  6 04:52:07 2013:sensor = 597 output = 148
+Fri Dec  6 04:58:07 2013:sensor = 591 output = 147
+Fri Dec  6 05:04:07 2013:sensor = 585 output = 145
+Fri Dec  6 05:10:07 2013:sensor = 592 output = 147
+Fri Dec  6 05:16:07 2013:sensor = 591 output = 147
+Fri Dec  6 05:22:07 2013:sensor = 589 output = 146
+Fri Dec  6 05:28:07 2013:sensor = 606 output = 151
+Fri Dec  6 05:34:07 2013:sensor = 590 output = 147
+Fri Dec  6 05:40:07 2013:sensor = 587 output = 146
+Fri Dec  6 05:46:07 2013:sensor = 588 output = 146
+213.169.62.187:4032 - - [06/Dec/2013 05:51:59] "HTTP/1.1 GET /HNAP1/" - 404 Not Found
+Fri Dec  6 05:52:07 2013:sensor = 589 output = 146
+Fri Dec  6 05:58:07 2013:sensor = 594 output = 148
+Fri Dec  6 06:04:07 2013:sensor = 588 output = 146
+Fri Dec  6 06:10:07 2013:sensor = 592 output = 147
+Fri Dec  6 06:16:07 2013:sensor = 601 output = 149
+Fri Dec  6 06:22:07 2013:sensor = 591 output = 147
+Fri Dec  6 06:28:07 2013:sensor = 589 output = 146
+Fri Dec  6 06:34:07 2013:sensor = 590 output = 147
+Fri Dec  6 06:40:07 2013:sensor = 594 output = 148
+Fri Dec  6 06:46:07 2013:sensor = 592 output = 147
+Fri Dec  6 06:52:08 2013:sensor = 592 output = 147
+Fri Dec  6 06:58:08 2013:sensor = 594 output = 148
+Fri Dec  6 07:04:08 2013:sensor = 586 output = 146
+Fri Dec  6 07:10:08 2013:sensor = 591 output = 147
+Fri Dec  6 07:16:08 2013:sensor = 592 output = 147
+Fri Dec  6 07:22:08 2013:sensor = 591 output = 147
+Fri Dec  6 07:28:08 2013:sensor = 588 output = 146
+Fri Dec  6 07:34:08 2013:sensor = 595 output = 148
+Fri Dec  6 07:40:08 2013:sensor = 593 output = 147
+Fri Dec  6 07:46:08 2013:sensor = 590 output = 147
+Fri Dec  6 07:52:08 2013:sensor = 596 output = 148
+Fri Dec  6 07:58:08 2013:sensor = 577 output = 143
+Fri Dec  6 08:04:08 2013:sensor = 569 output = 141
+Fri Dec  6 08:10:08 2013:sensor = 589 output = 146
+Fri Dec  6 08:16:08 2013:sensor = 593 output = 147
+Fri Dec  6 08:22:08 2013:sensor = 588 output = 146
+Fri Dec  6 08:28:08 2013:sensor = 588 output = 146
+Fri Dec  6 08:34:08 2013:sensor = 596 output = 148
+Fri Dec  6 08:40:08 2013:sensor = 590 output = 147
+Fri Dec  6 08:46:08 2013:sensor = 587 output = 146
+Fri Dec  6 08:52:08 2013:sensor = 587 output = 146
+Fri Dec  6 08:58:08 2013:sensor = 592 output = 147
+Fri Dec  6 09:04:08 2013:sensor = 589 output = 146
+Fri Dec  6 09:10:08 2013:sensor = 590 output = 147
+Fri Dec  6 09:16:08 2013:sensor = 592 output = 147
+Fri Dec  6 09:22:08 2013:sensor = 584 output = 145
+Fri Dec  6 09:28:08 2013:sensor = 582 output = 145
+Fri Dec  6 09:34:08 2013:sensor = 589 output = 146
+Fri Dec  6 09:40:08 2013:sensor = 583 output = 145
+Fri Dec  6 09:46:08 2013:sensor = 587 output = 146
+Fri Dec  6 09:52:09 2013:sensor = 582 output = 145
+Fri Dec  6 09:58:09 2013:sensor = 591 output = 147
+Fri Dec  6 10:04:09 2013:sensor = 587 output = 146
+Fri Dec  6 10:10:09 2013:sensor = 594 output = 148
+Fri Dec  6 10:16:09 2013:sensor = 592 output = 147
+Fri Dec  6 10:22:09 2013:sensor = 578 output = 144
+Fri Dec  6 10:28:09 2013:sensor = 576 output = 143
+Fri Dec  6 10:34:09 2013:sensor = 580 output = 144
+Fri Dec  6 10:40:09 2013:sensor = 587 output = 146
+Fri Dec  6 10:46:09 2013:sensor = 582 output = 145
+Fri Dec  6 10:52:09 2013:sensor = 589 output = 146
+Fri Dec  6 10:58:09 2013:sensor = 590 output = 147
+Fri Dec  6 11:04:09 2013:sensor = 584 output = 145
+Fri Dec  6 11:10:09 2013:sensor = 585 output = 145
+Fri Dec  6 11:16:09 2013:sensor = 563 output = 140
+144.191.148.4:38767 - - [06/Dec/2013 11:20:10] "HTTP/1.1 GET /log" - 200 OK
+144.191.148.4:18305 - - [06/Dec/2013 11:20:11] "HTTP/1.1 GET /static/plant1.jpg" - 200 
+144.191.148.4:38842 - - [06/Dec/2013 11:20:11] "HTTP/1.1 GET /static/udoo1.png" - 200 
+144.191.148.4:38843 - - [06/Dec/2013 11:20:11] "HTTP/1.1 GET /static/plant2.jpg" - 200 
+144.191.148.4:38767 - - [06/Dec/2013 11:20:12] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+Fri Dec  6 11:22:09 2013:sensor = 567 output = 141
+Fri Dec  6 11:28:09 2013:sensor = 582 output = 145
+Fri Dec  6 11:34:09 2013:sensor = 580 output = 144
+Fri Dec  6 11:40:09 2013:sensor = 581 output = 144
+Fri Dec  6 11:46:09 2013:sensor = 575 output = 143
+Fri Dec  6 11:52:09 2013:sensor = 573 output = 142
+Fri Dec  6 11:58:09 2013:sensor = 582 output = 145
+Fri Dec  6 12:04:09 2013:sensor = 579 output = 144
+Fri Dec  6 12:10:09 2013:sensor = 580 output = 144
+76.123.248.139:59733 - - [06/Dec/2013 12:14:29] "HTTP/1.1 GET /" - 200 OK
+76.123.248.139:59733 - - [06/Dec/2013 12:14:29] "HTTP/1.1 GET /static/plant1.jpg" - 200 
+76.123.248.139:59734 - - [06/Dec/2013 12:14:29] "HTTP/1.1 GET /static/udoo1.png" - 200 
+76.123.248.139:59735 - - [06/Dec/2013 12:14:29] "HTTP/1.1 GET /static/plant2.jpg" - 200 
+76.123.248.139:59735 - - [06/Dec/2013 12:14:29] "HTTP/1.1 GET /favicon.ico" - 404 Not Found
+76.123.248.139:59735 - - [06/Dec/2013 12:14:37] "HTTP/1.1 GET /gallery" - 200 OK
+76.123.248.139:59735 - - [06/Dec/2013 12:14:38] "HTTP/1.1 GET /static/sensor.jpg" - 200 
+76.123.248.139:59733 - - [06/Dec/2013 12:14:38] "HTTP/1.1 GET /static/solenoid_driver.jpg" - 200 
+76.123.248.139:59734 - - [06/Dec/2013 12:14:38] "HTTP/1.1 GET /static/solenoid.jpg" - 200 
+Fri Dec  6 12:16:09 2013:sensor = 581 output = 144
+Fri Dec  6 12:22:09 2013:sensor = 576 output = 143
+Fri Dec  6 12:28:09 2013:sensor = 574 output = 143
+Fri Dec  6 12:34:09 2013:sensor = 573 output = 142
+Fri Dec  6 12:40:09 2013:sensor = 577 output = 143
+Fri Dec  6 12:46:09 2013:sensor = 579 output = 144
+Fri Dec  6 12:52:10 2013:sensor = 577 output = 143
+76.123.248.139:60768 - - [06/Dec/2013 12:56:28] "HTTP/1.1 GET /" - 200 OK
+76.123.248.139:60768 - - [06/Dec/2013 12:56:31] "HTTP/1.1 GET /log" - 200 OK
+Fri Dec  6 12:58:10 2013:sensor = 580 output = 144
+
