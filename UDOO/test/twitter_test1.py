@@ -3,8 +3,8 @@ import os
 #import twitter
 #import twitter.oauth_dance
 
-CONSUMER_KEY = 'SnTSSTHtm7GybJp0ap8rQQ'
-CONSUMER_SECRET = 'zfifM0LBg4e1b9upVSq3HscdBGXP3JbuQ0W4JOEmm0'
+CONSUMER_KEY = 'your_key'
+CONSUMER_SECRET = 'your_secret'
 
 oauth_filename = os.path.join (os.path.expanduser ('~'), '.twitterdemo_oauth')
 
