@@ -1,9 +1,9 @@
 #tweepy setup, you must use the keys given to you when you create your app
 import tweepy
-consumer_key="SnTSSTHtm7GybJp0ap8rQQ"
-consumer_secret="zfifM0LBg4e1b9upVSq3HscdBGXP3JbuQ0W4JOEmm0"
-access_token="2162925949-LG6Bu2ROllLB6zdN3Bv705PPeiPCmnBHgrlypq3"
-access_token_secret="KUXoZ0IclbMM9I0GjY6ft4NRklz8xYWSGckrIPg1WBfsk"
+consumer_key="your_key"
+consumer_secret="your_secret"
+access_token="your_token"
+access_token_secret="your_secret_token"
 #"logs in" to twitter,
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
